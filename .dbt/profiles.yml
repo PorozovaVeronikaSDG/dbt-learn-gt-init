@@ -1,0 +1,13 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 16
+      account: BD37230
+      user: NIKAP
+      database: Analytics
+      warehouse: Transforming
+      schema: dbt_vporozova
+      password: yC9abYmQUSmQuXR
+      role: tranformer
