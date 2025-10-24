@@ -3,6 +3,7 @@
         PAYMENTMETHOD,
         raw.stripe.payment.STATUS,
         AMOUNT/100 as amount,
-        CREATED as created_at
+        CREATED as created_at,
+        _batched_at
 
-    from raw.stripe.payment
+from {{ source('stripe', 'payment') }}
